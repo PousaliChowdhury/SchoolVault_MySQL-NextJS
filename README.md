@@ -1,0 +1,1 @@
+# SchoolVault_Next.js-MySQL

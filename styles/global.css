@@ -1,0 +1,117 @@
+
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background: url('/bk.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.85); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+
+form input, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 15px; 
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+}
+
+
+form button {
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005bb5;
+}
+
+.school-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+
+.school-card {
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.9); 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+.school-card:hover {
+  transform: translateY(-5px);
+}
+
+.school-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.school-card h2 {
+  margin: 10px 0 5px;
+}
+
+.school-card h3 {
+  margin: 10px 0 5px;
+}
+
+.school-card p {
+  margin: 5px 0;
+}
+.school-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0070f3;
+  text-decoration: none;
+}
+.school-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  form input, form button {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+@media (max-width: 400px) {
+  .school-card img {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .school-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+}
